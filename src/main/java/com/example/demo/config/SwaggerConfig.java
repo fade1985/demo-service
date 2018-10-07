@@ -32,10 +32,6 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
             .apiInfo(apiInfo())
             .groupName("Demo Service")
-            .securitySchemes(Arrays.asList(
-                new ApiKey("Authorization", HttpHeaders.AUTHORIZATION, In.HEADER.name()),
-                new ApiKey("XSantanderChannel", "X-Santander-Channel", In.HEADER.name()))
-            )
             .forCodeGeneration(true)
             .genericModelSubstitutes(ResponseEntity.class)
             .select()
