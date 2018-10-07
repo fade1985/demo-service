@@ -5,6 +5,10 @@ spring:
     username: ntlewenqtnegvm
     password: 8f965c4e7a039e0650788034133922f6072c0904c3c73e922b54365dea473131
   jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
     hibernate:
       ddl-auto: update
     generate-ddl: true
