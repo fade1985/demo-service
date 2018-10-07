@@ -1,12 +1,12 @@
 spring:
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/demo?useSSL=false
-    username: root
-    password: root
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-54-243-147-162.compute-1.amazonaws.com:5432/d627p8trese8lr
+    username: ntlewenqtnegvm
+    password: 8f965c4e7a039e0650788034133922f6072c0904c3c73e922b54365dea473131
   jpa:
     hibernate:
       ddl-auto: update
     generate-ddl: true
     show-sql: true
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
